@@ -61,8 +61,15 @@
     font-family:'Anton', sans-serif;
     font-size:22px; letter-spacing:0.06em;
     color:var(--bone);
+    display:flex; align-items:center;
   }
   .logo span{color:var(--rust);}
+  .logo-img{
+    display:block;
+    width:42px; height:42px;
+    border-radius:50%;
+    object-fit:cover;
+  }
   nav.nav-links{
     display:flex; align-items:center; gap:36px;
     font-family:'JetBrains Mono', monospace;
@@ -835,6 +842,7 @@
   @media (max-width: 900px){
     .collections-swipe-hint{ display:block; margin:14px 0 0; font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(237,234,226,0.5); }
     header.site-nav{ padding:20px 24px; }
+    .logo-img{ width:34px; height:34px; }
     nav.nav-links{ display:none; }
     .hamburger{ display:flex; flex-direction:column; gap:5px; cursor:pointer; width:26px; }
     .hamburger span{ height:2px; width:100%; background:var(--bone); }
@@ -921,7 +929,7 @@
 
     <!-- NAVIGATION -->
     <header class="site-nav">
-      <div class="logo"><img src="images/logos/ogs-logo.jpeg" alt="Original Garment Store" style="width: 55px; height: 55px; object-fit: contain;"></div>
+      <div class="logo"><img src="images/logos/ogs-logo.jpeg" alt="Original Garment Store (OGS)" class="logo-img"></div>
       <nav class="nav-links">
         <a href="#featured-collections">Koleksi</a>
         <a href="#brand-showcase">Jenama</a>
