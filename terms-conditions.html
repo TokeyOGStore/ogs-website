@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions — Original Garment Store (OGS)</title>
+<meta name="description" content="Original Garment Store (OGS) Terms & Conditions — website use, orders, payment, shipping and other terms governing purchases at OGS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1C1E; --bone:#EDEAE2; --steel:#3A3D42; --rust:#A8462F; --olive:#6B6E4C; --line: rgba(58,61,66,0.16);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+  body{ font-family:'Inter', sans-serif; background:var(--bone); color:var(--ink); }
+  a{ color:inherit; }
+
+  .tag{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+    padding:5px 12px; border:1px solid var(--rust); color:var(--rust); position:relative;
+  }
+  .tag::before{ content:''; position:absolute; left:-1px; top:-1px; bottom:-1px; width:3px; background:var(--rust); }
+
+  /* ===== Simplified Nav ===== */
+  header.site-nav{
+    background:var(--ink); padding:24px 48px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{ font-family:'Anton', sans-serif; font-size:20px; letter-spacing:0.06em; color:var(--bone); text-decoration:none; }
+  .logo span{ color:var(--rust); }
+  .back-link{
+    font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--bone); text-decoration:none; opacity:0.8; transition:opacity 0.2s ease;
+  }
+  .back-link:hover{ opacity:1; color:var(--rust); }
+  .back-link:focus-visible{ outline:2px solid var(--rust); outline-offset:3px; }
+
+  /* ===== Policy content ===== */
+  .policy-page{ padding:80px 24px 100px; }
+  .policy-header{ max-width:760px; margin:0 auto 48px; }
+  .policy-header .tag{ margin-bottom:24px; }
+  .policy-title{
+    font-family:'Anton', sans-serif; font-size:clamp(30px,4vw,44px); line-height:1.15; text-transform:uppercase; color:var(--ink); margin-bottom:12px;
+  }
+  .policy-updated{
+    font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--steel); letter-spacing:0.04em;
+  }
+  .policy-body{ max-width:760px; margin:0 auto; }
+  .policy-body h2{
+    font-family:'Anton', sans-serif; font-size:20px; letter-spacing:0.01em; text-transform:uppercase; color:var(--ink);
+    margin-top:44px; margin-bottom:14px; padding-top:28px; border-top:1px solid var(--line);
+  }
+  .policy-body h2:first-child{ margin-top:0; padding-top:0; border-top:none; }
+  .policy-body p{ font-size:15px; line-height:1.75; color:var(--steel); margin-bottom:14px; }
+  .policy-body ul{ margin:0 0 14px 20px; }
+  .policy-body li{ font-size:15px; line-height:1.75; color:var(--steel); margin-bottom:6px; }
+  .policy-body strong{ color:var(--ink); font-weight:600; }
+  .policy-body a{ color:var(--rust); text-decoration:underline; }
+  .policy-contact{
+    margin-top:44px; padding:24px; background:#fff; border:1px solid var(--line);
+  }
+  .policy-contact p{ margin-bottom:6px; }
+
+  /* ===== Footer (matches homepage) ===== */
+  .site-footer{ background:var(--ink); color:var(--bone); padding:64px 48px 0; }
+  .footer-main{ max-width:1280px; margin:0 auto; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:48px; padding-bottom:48px; border-bottom:1px solid var(--line); }
+  .footer-brand .logo{ margin-bottom:18px; display:block; }
+  .footer-brand .tag{ margin-bottom:18px; }
+  .footer-brand-statement{ font-size:14px; line-height:1.7; color:rgba(237,234,226,0.65); max-width:280px; }
+  .footer-col-title{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(237,234,226,0.62); margin-bottom:20px; }
+  .footer-links{ list-style:none; display:flex; flex-direction:column; gap:13px; }
+  .footer-links a{ color:var(--bone); text-decoration:none; font-size:14px; opacity:0.85; transition:opacity 0.2s ease, color 0.2s ease; }
+  .footer-links a:hover{ opacity:1; color:var(--rust); }
+  .footer-links a:focus-visible{ outline:2px solid var(--rust); outline-offset:3px; }
+  .footer-address{ font-style:normal; font-size:13.5px; line-height:1.6; color:rgba(237,234,226,0.72); max-width:220px; }
+  .footer-bottom{ max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; padding:28px 0; }
+  .footer-copyright{ font-family:'JetBrains Mono', monospace; font-size:11px; color:rgba(237,234,226,0.6); }
+  .footer-legal{ display:flex; gap:24px; flex-wrap:wrap; }
+  .footer-legal a{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.04em; text-transform:uppercase; color:rgba(237,234,226,0.6); text-decoration:none; transition:color 0.2s ease; }
+  .footer-legal a:hover{ color:var(--rust); }
+  .footer-legal a:focus-visible{ outline:2px solid var(--rust); outline-offset:3px; }
+  .cta-btn{
+    display:inline-block; background:var(--rust); color:var(--bone); text-decoration:none;
+    padding:12px 22px; font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+  }
+
+  @media (max-width:900px){
+    header.site-nav{ padding:20px 24px; }
+    .policy-page{ padding:56px 20px 72px; }
+    .policy-title{ font-size:28px; }
+    .footer-main{ grid-template-columns:1fr; gap:36px; padding-bottom:36px; }
+    .footer-bottom{ flex-direction:column; align-items:flex-start; padding:24px 0; }
+    .site-footer{ padding:48px 20px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="logo">OGS<span>.</span></a>
+  <a href="index.html" class="back-link">← Kembali ke Laman Utama</a>
+</header>
+<main class="policy-page">
+  <div class="policy-header">
+    <span class="tag">Dasar & Terma</span>
+    <h1 class="policy-title">Terms &amp; Conditions</h1>
+  </div>
+  <div class="policy-body">
+    <p>Welcome to Original Garment Store (OGS). By accessing and using our website, you agree to be bound by the following Terms &amp; Conditions. Please read these terms carefully before placing an order.</p>
+    <h2>1. General</h2>
+    <p>Original Garment Store (OGS) operates an online retail business offering men's clothing and apparel through our website and other authorized sales channels.</p>
+    <p>These Terms &amp; Conditions apply to all customers who browse, access or make purchases through our website.</p>
+    <p>OGS reserves the right to update, amend or modify these Terms &amp; Conditions at any time without prior notice. Any changes will take effect once they are published on this website.</p>
+    <h2>2. Product Information</h2>
+    <p>We make reasonable efforts to ensure that all product information displayed on our website is accurate and up to date.</p>
+    <p>Product information may include:</p>
+    <ul>
+      <li>Product name and description</li>
+      <li>Brand</li>
+      <li>Colour</li>
+      <li>Size</li>
+      <li>Measurements</li>
+      <li>Material</li>
+      <li>Product photographs</li>
+      <li>Price</li>
+      <li>Availability</li>
+    </ul>
+    <p>However, slight differences may occur between the actual product and the images displayed on the website due to photography, lighting, screen settings or manufacturing variations.</p>
+    <p>Customers are encouraged to carefully review all product information, including size and measurements, before placing an order.</p>
+    <h2>3. Product Availability</h2>
+    <p>All products are subject to availability.</p>
+    <p>Adding an item to the shopping cart does not guarantee that the item will remain available until the order is completed.</p>
+    <p>In the event that a purchased item becomes unavailable due to an inventory error or other circumstances, OGS may contact the customer to provide an appropriate solution, which may include:</p>
+    <ul>
+      <li>Replacement with an available item, subject to agreement.</li>
+      <li>Refund of the unavailable item.</li>
+      <li>Other suitable arrangements agreed between OGS and the customer.</li>
+    </ul>
+    <h2>4. Pricing</h2>
+    <p>All prices displayed on our website are in Malaysian Ringgit (RM), unless otherwise stated.</p>
+    <p>OGS reserves the right to change product prices, promotions and discounts at any time without prior notice.</p>
+    <p>The applicable price at the time the customer completes the purchase will be used for the order.</p>
+    <p>Prices may differ between our website and other sales channels due to different promotions, platform campaigns, vouchers, fees or marketing activities.</p>
+    <h2>5. Orders</h2>
+    <p>Customers are responsible for ensuring that all information provided during checkout is correct.</p>
+    <p>This includes:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Delivery address</li>
+      <li>Contact number</li>
+      <li>Email address</li>
+      <li>Product selection</li>
+      <li>Size</li>
+      <li>Colour</li>
+      <li>Quantity</li>
+    </ul>
+    <p>Once an order has been confirmed and processed, changes or cancellations may not be possible.</p>
+    <p>OGS reserves the right to cancel or refuse an order in circumstances including, but not limited to:</p>
+    <ul>
+      <li>Incorrect pricing caused by a technical or system error.</li>
+      <li>Product availability issues.</li>
+      <li>Suspected fraudulent transactions.</li>
+      <li>Incorrect or incomplete order information.</li>
+      <li>Other circumstances that may affect the validity of the order.</li>
+    </ul>
+    <p>If an order is cancelled by OGS and payment has already been made, the customer will be notified regarding the applicable refund arrangement.</p>
+    <h2>6. Payment</h2>
+    <p>Customers must complete payment using the payment methods made available on our website.</p>
+    <p>An order will only be processed after successful payment confirmation.</p>
+    <p>OGS is not responsible for delays caused by payment providers, banks or third-party payment services.</p>
+    <h2>7. Shipping &amp; Delivery</h2>
+    <p>Orders will be processed and shipped using the delivery methods available at checkout.</p>
+    <p>Delivery times may vary depending on:</p>
+    <ul>
+      <li>Destination</li>
+      <li>Courier service</li>
+      <li>Weather</li>
+      <li>Public holidays</li>
+      <li>Peak periods</li>
+      <li>Operational disruptions</li>
+      <li>Other circumstances beyond OGS's control</li>
+    </ul>
+    <p>Estimated delivery times are provided as a guide only and are not guaranteed.</p>
+    <p>Once the parcel has been handed over to the courier, delivery is subject to the courier company's handling and delivery procedures.</p>
+    <h2>8. Courier-Related Issues</h2>
+    <p>OGS is not responsible for loss, damage, delay or other issues caused by the courier after the parcel has been handed over for delivery.</p>
+    <p>This includes:</p>
+    <ul>
+      <li>Lost parcels</li>
+      <li>Damaged parcels during transportation</li>
+      <li>Delivery delays</li>
+      <li>Incorrect handling</li>
+      <li>Missing parcels</li>
+      <li>Other courier-related incidents</li>
+    </ul>
+    <p>Customers may contact the relevant courier company to make a delivery-related claim.</p>
+    <p>OGS may assist by providing relevant order or shipment information where appropriate.</p>
+    <h2>9. Exchange Policy</h2>
+    <p>All purchases are generally not eligible for exchange.</p>
+    <p>Customers are responsible for selecting the correct size, colour and product before completing their purchase.</p>
+    <p>Exchange requests due to the following reasons will generally not be accepted:</p>
+    <ul>
+      <li>Wrong size selected by the customer.</li>
+      <li>Change of mind.</li>
+      <li>Customer no longer wants the item.</li>
+      <li>Incorrect colour selected by the customer.</li>
+      <li>Personal preference.</li>
+      <li>Product has been worn, washed or altered.</li>
+    </ul>
+    <p>However, an exchange may be considered if the error is confirmed to have been caused by OGS.</p>
+    <p>Examples include:</p>
+    <ul>
+      <li>Wrong product sent.</li>
+      <li>Wrong size sent compared with the customer's order.</li>
+      <li>Confirmed product defect caused before shipment.</li>
+    </ul>
+    <p>Customers must contact OGS Customer Service as soon as possible after receiving the order.</p>
+    <h2>10. Return &amp; Refund</h2>
+    <p>OGS does not generally accept returns or refunds due to change of mind, incorrect size selection or personal preference.</p>
+    <p>If an issue occurs due to an error by OGS, the case will be reviewed individually.</p>
+    <p>Customers may be required to provide:</p>
+    <ul>
+      <li>Order number.</li>
+      <li>Photos or videos of the product.</li>
+      <li>Photos of the packaging.</li>
+      <li>Shipping label.</li>
+      <li>Description of the issue.</li>
+    </ul>
+    <p>After verification, OGS will determine the appropriate resolution.</p>
+    <p>For the complete policy, please refer to our <a href="return-refund-policy.html">Return &amp; Refund Policy</a>.</p>
+    <h2>11. Product Condition</h2>
+    <p>Customers should inspect their products upon receiving the parcel.</p>
+    <p>Products intended for exchange due to an error by OGS must generally remain:</p>
+    <ul>
+      <li>Unworn.</li>
+      <li>Unwashed.</li>
+      <li>Unaltered.</li>
+      <li>In original condition.</li>
+      <li>With original tags or packaging where applicable.</li>
+    </ul>
+    <p>OGS reserves the right to reject an exchange request if the product has been used, washed, altered or damaged after delivery.</p>
+    <h2>12. Customer Responsibility</h2>
+    <p>Customers are responsible for providing accurate information when placing an order.</p>
+    <p>OGS will not be responsible for problems resulting from incorrect information provided by the customer, including:</p>
+    <ul>
+      <li>Incorrect delivery address.</li>
+      <li>Incorrect phone number.</li>
+      <li>Incorrect size selection.</li>
+      <li>Incorrect product selection.</li>
+      <li>Failure to receive the parcel.</li>
+      <li>Failure to respond to courier communications.</li>
+    </ul>
+    <h2>13. Promotions &amp; Discounts</h2>
+    <p>Promotional offers, discounts, vouchers and special campaigns may be subject to specific terms and conditions.</p>
+    <p>Unless otherwise stated:</p>
+    <ul>
+      <li>Promotions cannot be exchanged for cash.</li>
+      <li>Promotions cannot be combined with other promotions.</li>
+      <li>Promotional prices are valid only during the stated promotional period.</li>
+      <li>Promotional products may be subject to different return or exchange conditions.</li>
+    </ul>
+    <p>OGS reserves the right to modify or terminate a promotion where necessary.</p>
+    <h2>14. Intellectual Property</h2>
+    <p>All content displayed on this website, including but not limited to:</p>
+    <ul>
+      <li>Logos</li>
+      <li>Brand names</li>
+      <li>Product photographs</li>
+      <li>Graphics</li>
+      <li>Text</li>
+      <li>Website design</li>
+      <li>Images</li>
+      <li>Videos</li>
+      <li>Marketing materials</li>
+    </ul>
+    <p>is owned by or used with permission by OGS or the relevant rights holder.</p>
+    <p>No content may be copied, reproduced, modified, distributed or commercially used without prior written permission.</p>
+    <h2>15. Website Use</h2>
+    <p>Customers agree to use this website only for lawful purposes.</p>
+    <p>Customers must not:</p>
+    <ul>
+      <li>Attempt to gain unauthorized access to the website.</li>
+      <li>Interfere with website operations.</li>
+      <li>Upload malicious software.</li>
+      <li>Use the website for fraudulent activities.</li>
+      <li>Copy website content without permission.</li>
+      <li>Abuse promotional systems.</li>
+      <li>Conduct activities that may damage OGS or its customers.</li>
+    </ul>
+    <p>OGS reserves the right to restrict or terminate access to users who violate these terms.</p>
+    <h2>16. Website Accuracy</h2>
+    <p>OGS makes reasonable efforts to ensure that information on the website is accurate.</p>
+    <p>However, errors may occasionally occur, including:</p>
+    <ul>
+      <li>Typographical errors.</li>
+      <li>Incorrect product information.</li>
+      <li>Incorrect pricing.</li>
+      <li>Incorrect stock information.</li>
+      <li>Technical errors.</li>
+    </ul>
+    <p>OGS reserves the right to correct such errors and, where necessary, cancel affected orders.</p>
+    <h2>17. Third-Party Services</h2>
+    <p>Our website may use third-party services such as:</p>
+    <ul>
+      <li>Payment providers.</li>
+      <li>Courier companies.</li>
+      <li>E-commerce platforms.</li>
+      <li>Analytics services.</li>
+      <li>Advertising platforms.</li>
+      <li>Other technology providers.</li>
+    </ul>
+    <p>These third parties may have their own terms and privacy policies.</p>
+    <p>OGS is not responsible for the policies, systems or actions of third-party service providers.</p>
+    <h2>18. Limitation of Liability</h2>
+    <p>To the extent permitted by applicable law, OGS shall not be liable for losses or damages arising from circumstances beyond our reasonable control, including but not limited to:</p>
+    <ul>
+      <li>Courier delays or losses.</li>
+      <li>Payment provider failures.</li>
+      <li>Website downtime.</li>
+      <li>Technical problems.</li>
+      <li>Natural disasters.</li>
+      <li>Government restrictions.</li>
+      <li>Network or internet disruptions.</li>
+      <li>Other events beyond OGS's reasonable control.</li>
+    </ul>
+    <p>Nothing in these Terms &amp; Conditions is intended to exclude or limit any rights or protections that cannot legally be excluded under applicable law.</p>
+    <h2>19. Privacy</h2>
+    <p>Customer information submitted through our website may be collected and processed for purposes including:</p>
+    <ul>
+      <li>Processing orders.</li>
+      <li>Payment processing.</li>
+      <li>Delivery.</li>
+      <li>Customer service.</li>
+      <li>Business administration.</li>
+      <li>Marketing, where applicable.</li>
+      <li>Improving our products and services.</li>
+    </ul>
+    <p>For more information, customers should refer to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <h2>20. Governing Law</h2>
+    <p>These Terms &amp; Conditions shall be governed by and interpreted in accordance with the laws of Malaysia.</p>
+    <p>Any dispute arising in connection with these Terms &amp; Conditions shall be subject to the applicable laws and jurisdiction of Malaysia.</p>
+    <h2>21. Contact Us</h2>
+    <p>If you have any questions regarding these Terms &amp; Conditions, your order, our products or our policies, please contact our Customer Service team.</p>
+    <p><strong>Original Garment Store (OGS)</strong><br>Customer Service: 011-2623 9913</p>
+    <p>We will make reasonable efforts to assist customers and resolve genuine issues in a fair and professional manner.</p>
+    <h2>22. Acceptance of Terms</h2>
+    <p>By accessing our website and placing an order with Original Garment Store, you acknowledge that you have read, understood and agreed to these Terms &amp; Conditions, together with our other applicable website policies.</p>
+    <p><strong>Original Garment Store (OGS)</strong><br>One Stop. Multiple Brands. Quality &amp; Value.</p>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">OGS<span>.</span></a>
+      <span class="tag">Original Garment Store</span>
+      <p class="footer-brand-statement">Destinasi pakaian lelaki yang menghimpunkan pelbagai jenama berkualiti dalam satu tempat.</p>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col-title">Terokai</div>
+      <ul class="footer-links">
+        <li><a href="index.html#featured-collections">Koleksi</a></li>
+        <li><a href="index.html#brand-showcase">Jenama</a></li>
+        <li><a href="index.html#about-ogs">Tentang Kami</a></li>
+        <li><a href="index.html#footer-contact">Hubungi</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <div class="footer-col-title">Ikuti Kami</div>
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/originalgarmentstore/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/originalgarmentstore" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@original.garment.store" target="_blank" rel="noopener">TikTok — Official</a></li>
+        <li><a href="https://www.tiktok.com/@ogstoredenim" target="_blank" rel="noopener">TikTok — Denim</a></li>
+        <li><a href="https://www.tiktok.com/@studioctimber2" target="_blank" rel="noopener">TikTok — Timber</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-col-title">Hubungi Kami</div>
+      <ul class="footer-links">
+        <li><a href="tel:01126239913">011-2623 9913</a></li>
+        <li><a href="https://wa.link/01126239913" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:tokanseluar23@gmail.com">tokanseluar23@gmail.com</a></li>
+        <li><address class="footer-address">Tingkat 1 No 19A, Jalan Pelabur B 23/B, Seksyen 23, 40200 Shah Alam, Selangor</address></li>
+      </ul>
+      <div style="margin-top:20px;">
+        <a href="https://shop.originalgarmentstore.com.my" class="cta-btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copyright">© 2026 Original Garment Store. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="privacy-policy.html">Dasar Privasi</a>
+      <a href="terms-conditions.html">Terma &amp; Syarat</a>
+      <a href="return-refund-policy.html">Polisi Pemulangan</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
