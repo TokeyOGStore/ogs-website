@@ -161,11 +161,15 @@
     display:flex; align-items:center; justify-content:center;
     border-left:1px solid var(--line);
     overflow:hidden;
+    padding:100px 24px 40px;
+    box-sizing:border-box;
   }
   .hero-visual-img{
-    position:absolute; inset:0;
-    width:100%; height:100%;
-    object-fit:cover; object-position:50% 22%;
+    position:relative;
+    display:block;
+    max-width:100%; max-height:100%;
+    width:auto; height:auto;
+    object-fit:contain;
   }
   .hero-visual .placeholder-box{
     width:78%; height:70%;
@@ -863,7 +867,7 @@
     .hero-sub{ font-size:15px; max-width:none; margin-bottom:28px; }
     .hero-ctas{ flex-direction:column; align-items:flex-start; gap:16px; margin-bottom:32px; }
     .btn-primary{ width:100%; justify-content:center; }
-    .hero-visual{ order:2; min-height:340px; border-left:none; border-top:1px solid var(--line); }
+    .hero-visual{ order:2; min-height:520px; border-left:none; border-top:1px solid var(--line); }
     .hero-bottom-strip{ position:static; flex-direction:column; order:3; }
     .strip-item{ border-right:none; border-bottom:1px solid var(--line); padding:14px 20px; }
     .brand-intro{ padding:72px 24px; }
@@ -981,8 +985,8 @@
       </div>
 
       <div class="hero-visual">
-        <img src="images/hero-model-camo.jpg" alt="OGS model wearing a tiger-camo shirt in an OGS store environment" class="hero-visual-img">
-        <div class="hero-visual-tag">
+        <img src="images/hero-collage-v2.jpg" alt="OGS fashion mood board: six lifestyle photos showing men's street and work wear styling in and around the OGS store" class="hero-visual-img">
+        <div class="hero-visual-tag" style="display:none;">
           <span class="t1">OGS · Est. Collection</span>
           <span class="t2">The Tailor's Edit</span>
         </div>
